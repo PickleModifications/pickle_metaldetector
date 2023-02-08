@@ -1,0 +1,1 @@
+["metal_wand"] 							= {["name"] = "metal_wand",  	     		    ["label"] = "Metal Wand",	 		    ["weight"] = 1, 		["type"] = "item", 		["image"] = "metal_wand.png", 				["unique"] = false, 	    ["useable"] = true, 	["shouldClose"] = true,   	["combinable"] = nil,   ["description"] = ""},
