@@ -31,25 +31,6 @@ function CanAccessGroup(data)
     return false
 end 
 
-function GiveKeys(vehicle)
-end
-
-function ToggleDutyEvent(onduty)
-    if onduty then 
-        ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
-            local gender = skin.sex
-            local outfit = gender == 1 and Config.Workplace.outfit.female or Config.Workplace.outfit.male
-            if not outfit then return end
-            TriggerEvent('skinchanger:loadClothes', skin, outfit)
-        end)
-    else
-        ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
-            TriggerEvent('skinchanger:loadSkin', skin)
-            TriggerEvent('esx:restoreLoadout')
-        end)
-    end
-end
-
 RegisterNetEvent(GetCurrentResourceName()..":showNotification", function(text)
     ShowNotification(text)
 end)
