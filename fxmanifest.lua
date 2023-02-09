@@ -3,7 +3,7 @@ lua54 'yes'
 game 'gta5'
 
 name         'pickle_metaldetector'
-version      '1.0.0'
+version      '1.0.1'
 description  'A multi-framework metal detector that goes great with police / security roleplay.'
 author       'Pickle Mods'
 
