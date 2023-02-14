@@ -3,7 +3,7 @@ lua54 'yes'
 game 'gta5'
 
 name         'pickle_metaldetector'
-version      '1.0.1'
+version      '1.0.0'
 description  'A multi-framework metal detector that goes great with police / security roleplay.'
 author       'Pickle Mods'
 
@@ -26,6 +26,12 @@ client_scripts {
     'bridge/**/client.lua',
     'modules/**/client.lua',
 }
+
+file {
+    'stream/bv_scanner.ytyp'
+}
+
+data_file 'DLC_ITYP_REQUEST' 'stream/bv_scanner.ytyp'
 
 escrow_ignore {
 	"config.lua",
