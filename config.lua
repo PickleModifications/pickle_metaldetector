@@ -127,16 +127,17 @@ Config.Scanner = {
 
 Config.Wand = {
     item = "metal_wand",
-    model = `prop_parking_wand_01`,
+    model = `bv_scannerhand`,
     displayItems = false, -- Display all detected items found on the person, or just detect metal.
     failBeepCount = 8, -- Beeps for finding metal
     successBeepCount = 1, -- Beeps for not finding metal
-    searchTime = 5000, -- Time for scanning
-    boneID = 0xDEAD,
+    searchTime = 10000, -- Time for scanning
+    boneID = 60309,
     offset = {
-        pos = vec3(0.12, 0.05, 0.0),
-        rot = vec3(80.0, -20.0, 180.0),
+        pos = vec3(0.0, 0.0, 0.0),
+        rot = vec3(0.0, -60.0, 180.0000),
     },
-    animation = {"amb@world_human_car_park_attendant@male@base", "base"},
+    animation = {"amb@world_human_security_shine_torch@male@idle_b", "idle_e"},
+    --animation = {"missheist_agency2aig_4", "look_plan_a_worker2"},
     items = Config.MetalItems -- Items the scanner can detect
 }
