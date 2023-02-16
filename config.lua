@@ -6,6 +6,8 @@ Config.Debug = true
 
 Config.RenderDistance = 100.0
 
+Config.IgnoreGroups = false -- Doesn't scan people who can see scan results.
+
 Config.ScannerLocations = {
     {
         location = vec3(439.7059, -982.7385, 29.6896),
