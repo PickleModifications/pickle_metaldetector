@@ -58,7 +58,7 @@ CreateThread(function()
                     local offset = GetOffsetFromEntityInWorldCoords(prop, 0.0, 0.0, 0.5)
                     local dist = #(pcoords - offset)
                     local range = 0.85
-                    if dist < range and not insideScanner then 
+                    if dist < range and not insideScanner and not (Config.IgnoreGroups and CanAccessGroup(Config.Scanner.groups)) then 
                         WalkIntoScanner(k)
                     elseif insideScanner and dist > range then
                         insideScanner = nil
