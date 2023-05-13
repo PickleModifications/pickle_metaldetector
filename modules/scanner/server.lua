@@ -37,10 +37,10 @@ end)
 RegisterNetEvent("pickle_metaldetector:walkIntoScanner", function(index)
     local source = source
     local contraband = {}
-    for i=1, #Config.Scanner.items do 
-        local count = Search(source, Config.Scanner.items[i])
+    for i=1, #Config.MetalItems do 
+        local count = Search(source, Config.MetalItems[i])
         if count > 0 then 
-            table.insert(contraband, {label = GetItemLabel(Config.Scanner.items[i]), count = count})
+            table.insert(contraband, {label = GetItemLabel(Config.MetalItems[i]), count = count})
         end
     end
     TriggerClientEvent("pickle_metaldetector:detectScanner", -1, index, contraband)
