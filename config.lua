@@ -2,7 +2,7 @@ Config = {}
 
 Config.Language = "en"
 
-Config.Debug = true
+Config.Debug = false
 
 Config.RenderDistance = 100.0
 
@@ -112,6 +112,12 @@ Config.MetalItems = { -- List of Detected Items
     "weapon_fireextinguisher",
     "weapon_parachute",
     "weapon_hazardcan",
+    "weapon_candycane",
+    "weapon_pistolxm3",
+    "weapon_railgunxm3",
+    "weapon_heavyrifle",
+    "weapon_militaryrifle",
+    "weapon_stungun_mp"
 }
 
 Config.Scanner = {
