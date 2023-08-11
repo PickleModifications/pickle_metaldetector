@@ -67,5 +67,5 @@ function GetIdentifier(source)
 end
 
 function GetItemLabel(item)
-    return item
+    return QBCore.Shared.Items[item].label
 end
